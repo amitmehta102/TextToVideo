@@ -1,20 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text to Video Converter</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Cinematic Text to Video</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Convert Long Text to Video</h1>
-        <p>Paste your text below and click "Generate Video". This uses AI to create a short video based on your input.</p>
-        <textarea id="textInput" placeholder="Enter your long text here..."></textarea>
+
+<div class="app">
+
+    <h1>🎬 Cinematic Text to Video</h1>
+
+    <div class="card">
+        <textarea id="textInput" placeholder="Enter your story here..."></textarea>
+
         <button id="generateBtn">Generate Video</button>
-        <div id="status"></div>
-        <video id="videoPlayer" controls style="display: none;"></video>
+
+        
     </div>
-    <script src="script.js"></script>
+
+    <canvas id="videoCanvas" width="960" height="540"></canvas>
+
+    <button id="downloadBtn" disabled>Download Video</button>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
